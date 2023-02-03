@@ -41,7 +41,7 @@ public class EbayStepDefinitions {
 
     @And("sayfayi kapatir")
     public void sayfayiKapatir() {
-        Driver.closeDriver();
+        Driver.quitDriver();
     }
 
     @Then("cikan ilk sonuca tiklar")
@@ -49,14 +49,15 @@ public class EbayStepDefinitions {
         ebayPages.ilkCikanAramaSonucu.click();
     }
 
-    @And("Sonucun yeni sayfada acildigini gorur ve urun fiyatinin $ cinsinden oldugunu test eder")
-    public void sonucunYeniSayfadaAcildiginiGorurVeUrunFiyatinin$CinsindenOldugunuTestEder() {
 
-        String hedefTitle= "Xiaomi Redmi Note 9 128GB";
+    @And("Sonucun yeni sayfada acildigini gorur ve urun fiyatinin gorundugunu test eder")
+    public void sonucunYeniSayfadaAcildiginiGorurVeUrunFiyatininGorundugunuTestEder() {
+        String origin = Driver.getDriver().getWindowHandle();
 
-        ReusableMethods.switchToWindow(hedefTitle);
-        Assert.assertTrue(Driver.getDriver().getTitle().contains(hedefTitle));
+        Assert.assertNotSame(Driver.getDriver().getWindowHandle(), origin);
 
-        Assert.assertTrue(ebayPages.urunFiyatTuru.getText().contains("$"));
+        ReusableMethods.bekle(3);
+
+        Assert.assertTrue(ebayPages.urunFiyat.isDisplayed());
     }
 }

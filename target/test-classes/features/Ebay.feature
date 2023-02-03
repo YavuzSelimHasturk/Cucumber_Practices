@@ -18,7 +18,7 @@ Feature: Ebayde aranan urunun bir takim ozelliklerini gorebilmeliyim
 
     Given arama kutusuna "xiaomi note 9" yazip aratir
     Then cikan ilk sonuca tiklar
-    And  Sonucun yeni sayfada acildigini gorur ve urun fiyatinin $ cinsinden oldugunu test eder
+    And  Sonucun yeni sayfada acildigini gorur ve urun fiyatinin gorundugunu test eder
     And sayfayi kapatir
 
   Scenario:

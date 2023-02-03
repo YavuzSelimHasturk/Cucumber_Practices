@@ -20,6 +20,6 @@ public class EbayPages {
     @FindBy(xpath = "(//*[@class='s-item__image-wrapper image-treatment'])[2]")
     public WebElement ilkCikanAramaSonucu;
 
-    @FindBy(xpath = "(//span[@class='ux-textspans'])[14]")
-    public WebElement urunFiyatTuru;
+    @FindBy(xpath = "//*[@class='vim x-bin-price']")
+    public WebElement urunFiyat;
 }
