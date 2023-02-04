@@ -20,6 +20,21 @@ public class EbayPages {
     @FindBy(xpath = "(//*[@class='s-item__image-wrapper image-treatment'])[2]")
     public WebElement ilkCikanAramaSonucu;
 
-    @FindBy(xpath = "//*[@class='vim x-bin-price']")
-    public WebElement urunFiyat;
+    @FindBy(xpath = "//*[text()='Buy It Now']")
+    public WebElement buttonBuyItNow;
+
+    @FindBy(xpath = "//*[@data-testid='x-about-this-seller']")
+    public WebElement sellerInformation;
+
+    @FindBy(xpath = "(//*[@class='ux-labels-values__values col-9'])[5]")
+    public WebElement paymentOptions;
+
+    @FindBy(id="mainImgHldr")
+    public WebElement urunphoto;
+
+    @FindBy(xpath = "//*[text()='Shipping, returns & payments']")
+    public WebElement shippng_returns_payments;
+
+    @FindBy(id="shCountry")
+    public WebElement dropdownCountry;
 }

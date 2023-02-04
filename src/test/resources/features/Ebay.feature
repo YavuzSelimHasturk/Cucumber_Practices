@@ -1,37 +1,27 @@
-@wip
-Feature: Ebayde aranan urunun bir takim ozelliklerini gorebilmeliyim
 
-  Background: Arama yapilana kadar yapilacak islemler
-  Given Kullanici ebay anasayfaya gider
-  Then Ebay anasayfada oldugunu test eder
+Feature: Ebayde aranan urunu ve bir takim ozelliklerini gorebilmeliyim
 
+    Background: Arama yapilana kadar yapilacak islemler
+    Given Kullanici ebay anasayfaya gider
+    Then Ebay anasayfada oldugunu test eder
+    And arama kutusuna "aranacakUrun" yazip aratir
 
-
-  Scenario:
-
-  Given Kullanici ebay anasayfaya gider
-  When arama kutusuna "xiaomi note 9" yazip aratir
-  And cikan sonuc sayisinin 50 den fazla oldugunu test eder
-  And sayfayi kapatir
-
-  Scenario:
-
-    Given arama kutusuna "xiaomi note 9" yazip aratir
-    Then cikan ilk sonuca tiklar
-    And  Sonucun yeni sayfada acildigini gorur ve urun fiyatinin gorundugunu test eder
+    Scenario: Urun aramasinda cikan sonuc sayisi test edilebilmeli
+    Given cikan sonuc sayisinin "sayi" den fazla oldugunu test eder
     And sayfayi kapatir
 
-  Scenario:
-    Given Kullanici ebay anasayfaya gider
-    When arama kutusuna "xiaomi note 9" yazip aratir
-    Then cikan ilk sonuca tiklar
-    And urunun satici pozitif feedbacklerinin, odeme yontemlerinin, urun fotosunun gorunur oldugunu test eder
+    Scenario: Aranan urunun yeni sayfada acildigi ve ilgili butonun gorundugu test edilir
+    Given cikan ilk sonuca tiklar
+    And  Sonucun yeni sayfada acildigini gorur ve "ilgiliButon" gorundugunu test eder
     And sayfayi kapatir
 
-  Scenario:
-    Given Kullanici ebay anasayfaya gider
-    When arama kutusuna "xiaomi note 9" yazip aratir
-    Then cikan ilk sonuca tiklar
+  Scenario:Aranan urunun sayfasinda photo, payment, seller informationla ilgili testler yapilir
+    Given cikan ilk sonuca tiklar
+    And urunun Seller information, odeme yontemlerinin, urun fotosunun gorunur oldugunu test eder
+    And sayfayi kapatir
+  @wip
+  Scenario: Aranan urunun shipping olarak farkli ulkelere gonderilebildigi test edilir
+    Given cikan ilk sonuca tiklar
     And urun hakkinda "shipping,returns&payments" bolumune gider
-    And Shipping country olarak Luxembourg in secilebildigini test eder
+    And Shipping country olarak "Israel" secilebildigini test eder
     And sayfayi kapatir
