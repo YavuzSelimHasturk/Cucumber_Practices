@@ -1,4 +1,4 @@
-
+@wip
 Feature: Ebayde aranan urunu ve bir takim ozelliklerini gorebilmeliyim
 
     Background: Arama yapilana kadar yapilacak islemler
@@ -17,9 +17,9 @@ Feature: Ebayde aranan urunu ve bir takim ozelliklerini gorebilmeliyim
 
   Scenario:Aranan urunun sayfasinda photo, payment, seller informationla ilgili testler yapilir
     Given cikan ilk sonuca tiklar
-    And urunun Seller information, odeme yontemlerinin, urun fotosunun gorunur oldugunu test eder
+    And urunun adinin, ratinginin, urun durumunun gorunur oldugunu test eder
     And sayfayi kapatir
-  @wip
+
   Scenario: Aranan urunun shipping olarak farkli ulkelere gonderilebildigi test edilir
     Given cikan ilk sonuca tiklar
     And urun hakkinda "shipping,returns&payments" bolumune gider

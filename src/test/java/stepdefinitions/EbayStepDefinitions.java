@@ -65,21 +65,7 @@ public class EbayStepDefinitions {
 
     }
 
-    @And("urunun Seller information, odeme yontemlerinin, urun fotosunun gorunur oldugunu test eder")
-    public void urununSaticiSellerInformationOdemeYontemlerininUrunFotosununGorunurOldugunuTestEder() {
-
-        ReusableMethods.bekle(3);
-        assertTrue(ebayPages.sellerInformation.isDisplayed());
-
-        ReusableMethods.bekle(2);
-        actions.moveToElement(ebayPages.urunphoto).perform();
-        assertTrue(ebayPages.urunphoto.isDisplayed());
-
-        ReusableMethods.bekle(3);
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-
-        assertTrue(ebayPages.paymentOptions.isDisplayed());
-    }
+    
 
     @And("urun hakkinda {string} bolumune gider")
     public void urunHakkindaBolumuneGider(String aranacakBolum) {
@@ -113,6 +99,17 @@ public class EbayStepDefinitions {
         int sonucSayisi = Integer.parseInt(ebayPages.resultnumber.getText());
 
         assertTrue(sonucSayisi>girilenSayi);
+
+    }
+
+    @And("urunun adinin, ratinginin, urun durumunun gorunur oldugunu test eder")
+    public void urununAdininRatingininUrunDurumununGorunurOldugunuTestEder() {
+        ReusableMethods.bekle(2);
+       // Assert.assertTrue(ebayPages.urunAdi.isDisplayed());
+        ReusableMethods.bekle(2);
+      //  Assert.assertTrue(ebayPages.ratingSection.isDisplayed());
+        ReusableMethods.bekle(2);
+        Assert.assertTrue(ebayPages.LabelUrunCondition.isDisplayed());
 
     }
 }

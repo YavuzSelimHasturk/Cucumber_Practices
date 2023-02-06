@@ -23,14 +23,14 @@ public class EbayPages {
     @FindBy(xpath = "//*[text()='Buy It Now']")
     public WebElement buttonBuyItNow;
 
-    @FindBy(xpath = "//*[@data-testid='x-about-this-seller']")
-    public WebElement sellerInformation;
+    @FindBy(xpath = "//*[@class='vim x-item-title']")
+    public WebElement urunAdi;
 
-    @FindBy(xpath = "(//*[@class='ux-labels-values__values col-9'])[5]")
-    public WebElement paymentOptions;
+    @FindBy(id ="_rvwlnk")
+    public WebElement ratingSection;
 
-    @FindBy(id="mainImgHldr")
-    public WebElement urunphoto;
+    @FindBy(xpath = "//*[@class='vim x-item-condition']")
+    public WebElement LabelUrunCondition;
 
     @FindBy(xpath = "//*[text()='Shipping, returns & payments']")
     public WebElement shippng_returns_payments;
