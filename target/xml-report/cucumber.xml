@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="142.57">
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Urun aramasinda cikan sonuc sayisi test edilebilmeli" time="24.953">
+        <system-out>
+            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
+Then Amazon anasayfada oldugunu test eder...................................passed
+And arama kutusuna "aranacakUrun" yazip aratir..............................passed
+Given cikan sonuc sayisinin "sayi" den fazla oldugunu test eder.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun yeni sayfada acildigi ve ilgili butonun gorundugu test edilir" time="36.701">
+        <system-out>
+            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
+Then Amazon anasayfada oldugunu test eder...................................passed
+And arama kutusuna "aranacakUrun" yazip aratir..............................passed
+Given cikan ilk sonuca tiklar...............................................passed
+And Sonucun acildigini gorur ve "ilgiliButon" gorundugunu test eder.........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun sayfasinda urun adi, ratingi, photo ile ilgili testler yapilir" time="45.421">
+        <system-out>
+            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
+Then Amazon anasayfada oldugunu test eder...................................passed
+And arama kutusuna "aranacakUrun" yazip aratir..............................passed
+Given cikan ilk sonuca tiklar...............................................passed
+And urunun adinin, ratinginin, urun fotosunun gorunur oldugunu test eder....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun shipping detaylari test edilir" time="34.916">
+        <system-out>
+            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
+Then Amazon anasayfada oldugunu test eder...................................passed
+And arama kutusuna "aranacakUrun" yazip aratir..............................passed
+Given cikan ilk sonuca tiklar...............................................passed
+And acilan sayfada yer alan shipping details yazisina tiklar................passed
+And shipping Details bilgilerinin gorundugunu test eder.....................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
