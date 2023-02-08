@@ -57,6 +57,7 @@ public class AmazonStepDefinitions {
     public void AcildiginiGorurVeGorundugunuTestEder(String gorunenYazi) {
         gorunenYazi = ConfigReader.getProperty("gorunenYazi");
 
+        ReusableMethods.bekle(2);
         assertEquals(gorunenYazi,amazonPage.buttonBuyNow.getText());
 
     }
@@ -92,6 +93,7 @@ public class AmazonStepDefinitions {
 
     @And("acilan sayfada yer alan shipping details yazisina tiklar")
     public void acilanSayfadaYerAlanShippingDetailsYazisinaTiklar() {
+        ReusableMethods.bekle(2);
         amazonPage.labelShippingDetails.click();
         ReusableMethods.bekle(2);
     }

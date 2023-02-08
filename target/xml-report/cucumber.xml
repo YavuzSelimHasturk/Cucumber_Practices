@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="142.57">
-    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Urun aramasinda cikan sonuc sayisi test edilebilmeli" time="24.953">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="126.975">
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Urun aramasinda cikan sonuc sayisi test edilebilmeli" time="21.645">
         <system-out>
             <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
 Then Amazon anasayfada oldugunu test eder...................................passed
@@ -9,7 +9,7 @@ Given cikan sonuc sayisinin "sayi" den fazla oldugunu test eder.............pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun yeni sayfada acildigi ve ilgili butonun gorundugu test edilir" time="36.701">
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun yeni sayfada acildigi ve ilgili butonun gorundugu test edilir" time="35.399">
         <system-out>
             <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
 Then Amazon anasayfada oldugunu test eder...................................passed
@@ -19,7 +19,7 @@ And Sonucun acildigini gorur ve "ilgiliButon" gorundugunu test eder.........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun sayfasinda urun adi, ratingi, photo ile ilgili testler yapilir" time="45.421">
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun sayfasinda urun adi, ratingi, photo ile ilgili testler yapilir" time="43.592">
         <system-out>
             <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
 Then Amazon anasayfada oldugunu test eder...................................passed
@@ -29,15 +29,46 @@ And urunun adinin, ratinginin, urun fotosunun gorunur oldugunu test eder....pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun shipping detaylari test edilir" time="34.916">
-        <system-out>
+    <testcase classname="Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim" name="Aranan urunun shipping detaylari test edilir" time="25.634">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}&#10;  (Session info: chrome=109.0.5414.120)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [65770a92bd7493223cdc186b7dc58941, findElement {using=id, value=twotabsearchtextbox}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Yvz\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59427}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59427/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 65770a92bd7493223cdc186b7dc58941" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
 Then Amazon anasayfada oldugunu test eder...................................passed
-And arama kutusuna "aranacakUrun" yazip aratir..............................passed
-Given cikan ilk sonuca tiklar...............................................passed
-And acilan sayfada yer alan shipping details yazisina tiklar................passed
-And shipping Details bilgilerinin gorundugunu test eder.....................passed
+And arama kutusuna "aranacakUrun" yazip aratir..............................failed
+Given cikan ilk sonuca tiklar...............................................skipped
+And acilan sayfada yer alan shipping details yazisina tiklar................skipped
+And shipping Details bilgilerinin gorundugunu test eder.....................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65770a92bd7493223cdc186b7dc58941, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Yvz\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59427}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59427/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65770a92bd7493223cdc186b7dc58941
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
+	at stepdefinitions.AmazonStepDefinitions.aramaKutusunaYazipAratir(AmazonStepDefinitions.java:34)
+	at ✽.arama kutusuna "aranacakUrun" yazip aratir(file:///C:/Users/Yvz/IdeaProjects/Cucumber_Practices/src/test/resources/features/Amazon.feature:8)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
