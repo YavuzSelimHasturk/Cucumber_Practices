@@ -102,4 +102,12 @@ public class AmazonStepDefinitions {
     public void shippingDetailsBilgilerininGorundugunuTestEder() {
         assertTrue(amazonPage.sectionShippingDetails.isDisplayed());
     }
+
+    @When("arama kutusuna listedeki {string} yazip aratir")
+    public void aramaKutusunalistedekiYazipAratir(String aranacakUrunIsmi) {
+
+
+        amazonPage.searchBox.sendKeys(aranacakUrunIsmi+ Keys.ENTER);
+
+    }
 }

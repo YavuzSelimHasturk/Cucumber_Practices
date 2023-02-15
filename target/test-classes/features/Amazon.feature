@@ -1,4 +1,4 @@
-@wip
+
 Feature: Amazonda aranan urunu ve bir takim ozelliklerini gorebilmeliyim
 
     Background: Arama yapilana kadar yapilacak islemler
