@@ -17,7 +17,7 @@ public class AmazonPage {
     @FindBy(xpath = "(//*[@class='a-section a-spacing-small a-spacing-top-small'])[1]")
     public WebElement resultnumber;
 
-    @FindBy(xpath = "(//*[@class='rush-component'])[5]")
+    @FindBy(xpath = "(//*[@class='a-size-medium a-color-base a-text-normal'])[1]")
     public WebElement ilkCikanAramaSonucu;
 
     @FindBy(xpath = "(//*[@id='submit.buy-now-announce'])")
