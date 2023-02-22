@@ -1,58 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="77.166">
-    <testcase classname="Amazonda urun aratma" name="Amazonda farkli urunler aratma testi" time="31.17">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="76.124">
+    <testcase classname="Beymen Test" name="Beymen Test" time="75.387">
         <system-out>
-            <![CDATA[* Kullanici amazon anasayfaya gider.........................................passed
-* arama kutusuna listedeki "xiaomi note 9" yazip aratir.....................passed
-* sayfayi kapatir...........................................................passed
+            <![CDATA[Given kullanici Beymen sayfasina gider......................................passed
+Then Cerezleri kabul eder ve cinsiyet secimini yapar........................passed
+And Beymen anasayfasinin acildigini kontrol eder............................passed
+And Arama kutucuguna "aranacak Urun" kelimesini girer ve aratir.............passed
+Then Sonuca gore sergilenen urunlerden rastgele bir urun secer..............passed
+And Secilen urunun urun bilgisi ve tutar bilgisini txt dosyasina yazdirir...passed
+And Secilen urunu sepete ekler..............................................passed
+And Urun sayfasindaki fiyat ile sepette yer alan urunun fiyatinin dogrulugunu karsilastirir.passed
+And Adet sayisini arttirarak urun adedinin 2 oldugunu dogrular..............passed
+Then Urunu sepetten silerek sepetin bos oldugunu kontrol eder...............passed
 ]]>
         </system-out>
-    </testcase>
-    <testcase classname="Amazonda urun aratma" name="Amazonda farkli urunler aratma testi 2" time="22.621">
-        <system-out>
-            <![CDATA[* Kullanici amazon anasayfaya gider.........................................passed
-* arama kutusuna listedeki "logitech mouse" yazip aratir....................passed
-* sayfayi kapatir...........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Amazonda urun aratma" name="Amazonda farkli urunler aratma testi 3" time="22.807">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}&#10;  (Session info: chrome=110.0.5481.78)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [09bc525d3f766db34eca17198d44e809, findElement {using=id, value=twotabsearchtextbox}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Yvz\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55099/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 09bc525d3f766db34eca17198d44e809" type="org.openqa.selenium.NoSuchElementException">
-            <![CDATA[* Kullanici amazon anasayfaya gider.........................................passed
-* arama kutusuna listedeki "sony laptop" yazip aratir.......................failed
-* sayfayi kapatir...........................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
-  (Session info: chrome=110.0.5481.78)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [09bc525d3f766db34eca17198d44e809, findElement {using=id, value=twotabsearchtextbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Yvz\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55099/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 09bc525d3f766db34eca17198d44e809
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
-	at stepdefinitions.AmazonStepDefinitions.aramaKutusunalistedekiYazipAratir(AmazonStepDefinitions.java:110)
-	at ✽.arama kutusuna listedeki "sony laptop" yazip aratir(file:///C:/Users/Yvz/IdeaProjects/Cucumber_Practices/src/test/resources/features/AmazonScenarioOutline.feature:6)
-]]>
-        </failure>
     </testcase>
 </testsuite>

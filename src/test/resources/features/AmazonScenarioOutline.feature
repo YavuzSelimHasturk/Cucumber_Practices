@@ -1,5 +1,5 @@
 Feature: Amazonda urun aratma
-  @wip
+
   Scenario Outline: Amazonda farkli urunler aratma testi
 
     * Kullanici amazon anasayfaya gider
