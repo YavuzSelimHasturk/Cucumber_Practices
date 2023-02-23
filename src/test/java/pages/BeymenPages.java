@@ -22,4 +22,31 @@ public class BeymenPages {
 
     @FindBy(xpath = "(//*[@class='m-productCard__photo'])[1]")
     public WebElement firstProduct;
+
+    @FindBy(xpath = "//*[@class='o-productDetail__title']")
+    public WebElement productDetail;
+
+    @FindBy (xpath = "//*[@id='priceNew']")
+    public WebElement price;
+
+    @FindBy(xpath = "//span[text()='L']")
+    public WebElement urunBedeni;
+
+    @FindBy(xpath = "//a[@title='Sepetim']")
+    public WebElement sepetim;
+
+    @FindBy(xpath = "//button[@id='addBasket']")
+    public WebElement sepeteEkle;
+
+    @FindBy(xpath = "//span[@class='m-productPrice__salePrice']")
+    public WebElement sepettekiUrunFiyati;
+
+    @FindBy(xpath = "//*[@id='quantitySelect0-key-0']")
+    public WebElement sepettekiUrunuArtirButonu;
+
+    @FindBy (xpath = "//button[@id='removeCartItemBtn0-key-0']")
+    public WebElement sepettekiUrunSilButonu;
+
+    @FindBy(xpath = "//*[text()='Sepetinizde Ürün Bulunmamaktadır']")
+    public WebElement sepetinizdeUrunBulunmamaktadir;
 }
