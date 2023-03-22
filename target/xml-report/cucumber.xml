@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="80.062">
-    <testcase classname="Beymen Test" name="Beymen Test" time="79.32">
-        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=110.0.5481.104)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2abdcf7efd2e53b79f24f4bac851e6d6, getElementText {id=7a7ef5f0-4a15-4359-a538-959537029731}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Yvz\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59711/devtoo..., se:cdpVersion: 110.0.5481.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (2abdcf7efd2e53b79f24f4bac851e6d6)] -&gt; xpath: //span[@class='m-productPrice__salePrice']]&#10;Session ID: 2abdcf7efd2e53b79f24f4bac851e6d6" type="org.openqa.selenium.StaleElementReferenceException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.089">
+    <testcase classname="Beymen Test" name="Beymen Test" time="74.551">
+        <system-out>
             <![CDATA[Given kullanici Beymen sayfasina gider......................................passed
 Then Cerezleri kabul eder ve cinsiyet secimini yapar........................passed
 And Beymen anasayfasinin acildigini kontrol eder............................passed
@@ -10,42 +10,9 @@ Then Sonuca gore sergilenen urunlerden rastgele bir urun secer..............pass
 And Secilen urunun urun bilgisi ve tutar bilgisini txt dosyasina yazdirir...passed
 And Secilen urunu sepete ekler..............................................passed
 And Urun sayfasindaki fiyat ile sepette yer alan urunun fiyatinin dogrulugunu karsilastirir.passed
-And Adet sayisini arttirarak urun adedinin 2 oldugunu dogrular..............failed
-Then Urunu sepetten silerek sepetin bos oldugunu kontrol eder...............skipped
-
-StackTrace:
-org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.104)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2abdcf7efd2e53b79f24f4bac851e6d6, getElementText {id=7a7ef5f0-4a15-4359-a538-959537029731}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Yvz\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59711/devtoo..., se:cdpVersion: 110.0.5481.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (2abdcf7efd2e53b79f24f4bac851e6d6)] -> xpath: //span[@class='m-productPrice__salePrice']]
-Session ID: 2abdcf7efd2e53b79f24f4bac851e6d6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy22.getText(Unknown Source)
-	at stepdefinitions.BeymenStepDefinitions.adet_sayisini_arttirarak_urun_adedinin_oldugunu_dogrular(BeymenStepDefinitions.java:96)
-	at ✽.Adet sayisini arttirarak urun adedinin 2 oldugunu dogrular(file:///C:/Users/Yvz/IdeaProjects/Cucumber_Practices/src/test/resources/features/Beymen.feature:13)
+And Adet sayisini arttirarak urun adedinin 2 oldugunu dogrular..............passed
+Then Urunu sepetten silerek sepetin bos oldugunu kontrol eder...............passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
